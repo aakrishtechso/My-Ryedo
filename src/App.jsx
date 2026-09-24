@@ -1084,6 +1084,7 @@ export default function App() {
                 <div className="h-24 rounded-3xl border border-slate-200 bg-white flex items-center justify-center">
                   <div className="w-7 h-7 border-3 border-[#FF6400] border-t-transparent rounded-full animate-spin" />
                 </div>
+<<<<<<< HEAD
               ) : vehicles.length === 0 || filteredVehicles.length === 0 ? (
                 <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 text-center">
                   <h3 className="text-base sm:text-lg font-black text-slate-900">No vehicles listed yet</h3>
@@ -1096,6 +1097,9 @@ export default function App() {
                   </button>
                 </div>
               ) : (
+=======
+              ) : vehicles.length === 0 || filteredVehicles.length === 0 ? null : (
+>>>>>>> 76dd880975d6b69ab705ef26cc95d2b074c48323
                 <div id="vehicles-near-you-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
                   {filteredVehicles.map((vehicle) => {
                     const title = vehicle?.name || [vehicle?.brand, vehicle?.model].filter(Boolean).join(' ') || 'Vehicle';
